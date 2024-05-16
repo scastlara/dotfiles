@@ -1,0 +1,273 @@
+{
+  // MAIN SETTINGS
+  "editor.fontSize": 14,
+  "editor.smoothScrolling": true,
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.dragAndDrop": false,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "'FiraCode Nerd Font', monospace",
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": false,
+  "editor.multiCursorPaste": "spread",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.list.smoothScrolling": true,
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.middleClickBehavior": "paste",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "window.title": "${rootName}${separator}${activeEditorMedium}",
+  "editor.semanticTokenColorCustomizations": {
+    "[Material Theme]": {
+      "rules": {
+        "variable.readonly:python": "#c7b0f0",
+        "variable:python": "#fff",
+        "selfParameter:python": "#f07178",
+        "clsParameter:python": "#f07178",
+        "parameter:python": "#f3b8b8"
+      }
+    },
+    "[GitHub Dark]": {
+      "rules": {
+        "selfParameter:python": "#f07178",
+        "clsParameter:python": "#f07178"
+      }
+    },
+    "[GitHub Dark Dimmed]": {
+      "rules": {
+        "selfParameter:python": "#f07178",
+        "clsParameter:python": "#f07178"
+      }
+    }
+  },
+
+  // PYTHON SETTINGS
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["-s", "-v"],
+  "python.testing.pytestPath": "poetry run pytest",
+  "python.languageServer": "Pylance",
+  "python.analysis.indexing": true,
+  "python.experiments.enabled": false,
+  "python.analysis.extraPaths": ["src", "acceptance_tests"],
+  "python.analysis.autoImportCompletions": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "ruff.lint.args": ["--unfixable=F401,F841"],
+  "ruff.lint.run": "onType",
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+
+  // VIM MODE SETTINGS
+  "vim.cursorStylePerMode.insert": "line-thin",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.visual": "underline-thin",
+  "vim.useSystemClipboard": true,
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#81a1c1", "#ffffff"],
+  "vim.statusBarColors.insert": ["#c882e7", "#000"],
+  "vim.statusBarColors.surroundinputmode": ["#c882e7", "#ffffff"],
+  "vim.statusBarColors.visual": ["#5b9c55", "#ffffff"],
+  "vimFindHighlight.charPrimaryColor": "rgb(199, 100, 8)",
+  "vim.smartRelativeLine": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["editor.action.marker.previous"]
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.camelCaseMotion.enable": true,
+  "vim.replaceWithRegister": true,
+  "vim.highlightedyank.enable": true,
+
+  // PEACOCK SETTINGS
+  "peacock.affectStatusBar": false,
+  "peacock.favoriteColors": [
+    {
+      "name": "Green",
+      "value": "#62a85b"
+    },
+    {
+      "name": "Purple",
+      "value": "#9c63c8"
+    },
+    {
+      "name": "Yellow",
+      "value": "#b3943f"
+    },
+    {
+      "name": "Blue",
+      "value": "#51acd0"
+    },
+    {
+      "name": "Deep blue",
+      "value": "#040C9F"
+    },
+    {
+      "name": "Deep purple",
+      "value": "#7474cb"
+    },
+    {
+      "name": "Orange",
+      "value": "#cc5c42"
+    },
+    {
+      "name": "Pink",
+      "value": "#c65c8a"
+    },
+    {
+      "name": "Magenta",
+      "value": "#cf4073"
+    },
+    {
+      "name": "Brown",
+      "value": "#663333"
+    },
+    {
+      "name": "gold",
+      "value": "#b1b643"
+    },
+    {
+      "name": "magenta",
+      "value": "#b460bd"
+    },
+    {
+      "name": "greenish",
+      "value": "#5cb655"
+    },
+    {
+      "name": "purple",
+      "value": "#6a7ecd"
+    },
+    {
+      "name": "orange",
+      "value": "#d09545"
+    },
+    {
+      "name": "turqoise",
+      "value": "#4cae99"
+    },
+    {
+      "name": "redder",
+      "value": "#d54640"
+    },
+    {
+      "name": "ugly",
+      "value": "#6b7c35"
+    },
+    {
+      "name": "pinky",
+      "value": "#c75980"
+    },
+    {
+      "name": "browny",
+      "value": "#b96543"
+    }
+  ],
+  "peacock.affectPanelBorder": true,
+  "peacock.affectSideBarBorder": true,
+  "peacock.affectEditorGroupBorder": true,
+  "peacock.affectStatusAndTitleBorders": true,
+  "peacock.affectTabActiveBorder": true,
+  "peacock.showColorInStatusBar": false,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#273a4a",
+    "activityBar.activeBackground": "#0510d1",
+    "activityBar.background": "#0510d1",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#000000",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#0510d1",
+    "statusBar.background": "#81a1c1",
+    "statusBar.foreground": "#ffffff",
+    "statusBarItem.hoverBackground": "#3395bb",
+    "statusBarItem.remoteBackground": "#51acd0",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#040c9f",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#040c9f99",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "panel.border": "#0510d1",
+    "editorGroup.border": "#0510d1",
+    "sideBar.border": "#0510d1",
+    "statusBar.noFolderBackground": "#81a1c1",
+    "statusBar.debuggingBackground": "#81a1c1",
+    "statusBar.debuggingForeground": "#ffffff",
+    "titleBar.border": "#040c9f",
+    "tab.activeBorder": "#0510d1"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "task.problemMatchers.neverPrompt": {
+    "shell": true
+  },
+  "debug.allowBreakpointsEverywhere": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "markdown.extension.toc.levels": "2..6",
+  "explorer.confirmDragAndDrop": false,
+  "workspaceExplorer.workspaceStorageDirectory": "/Users/sergio/Documents/workspaces",
+  "markdown.extension.toc.updateOnSave": false,
+  "git.openRepositoryInParentFolders": "never",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.statusBar.pullRequests.enabled": false,
+  "gitlens.statusBar.reduceFlicker": false,
+  "gitlens.graph.statusBar.enabled": false,
+  "gitlens.mode.statusBar.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "makefile.buildBeforeLaunch": false,
+  "makefile.configureOnEdit": false,
+  "makefile.configureOnOpen": false,
+  "window.confirmSaveUntitledWorkspace": false,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.editorActionsLocation": "titleBar"
+}
